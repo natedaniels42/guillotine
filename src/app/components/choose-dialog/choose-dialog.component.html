@@ -19,10 +19,10 @@
         <div class="form-row">
             <div class="col-sm-4"></div>
             <mat-dialog-actions>
-                <button mat-button [mat-dialog-close]="'random'" align="center" *ngIf="!typeWord">Choose Random Word</button>
-                <button mat-button (click)="setTypeWord(true)" align="center" *ngIf="!typeWord">Type Word</button>
-                <button mat-button [mat-dialog-close]="newWord.value" align="center" *ngIf="typeWord">Enter</button>  
-                <button mat-button align="center" (click)="setTypeWord(false)" *ngIf="typeWord">Cancel</button>  
+                <button mat-button [mat-dialog-close]="'random'" align="center" color="primary" *ngIf="!typeWord">Choose Random Word</button>
+                <button mat-button (click)="setTypeWord(true)" align="center"  color="primary" *ngIf="!typeWord">Type Word</button>
+                <button mat-button [mat-dialog-close]="newWord.value" align="center" color="primary" *ngIf="typeWord">Enter</button>  
+                <button mat-button align="center" (click)="setTypeWord(false)" color="primary" *ngIf="typeWord">Cancel</button>  
             </mat-dialog-actions>
             <div class="col-sm-4"></div>
         </div>

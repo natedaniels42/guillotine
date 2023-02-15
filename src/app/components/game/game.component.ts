@@ -69,7 +69,10 @@ export class GameComponent implements OnInit {
         // this.lose = true;
         const loseDialog = this.dialog.open(LoseDialogComponent, {
           width: '70vw',
-          height: '50vh'
+          height: '50vh',
+          data: {
+            word: this.word.join('')
+          }
         });
 
         loseDialog.afterClosed().subscribe(() => {

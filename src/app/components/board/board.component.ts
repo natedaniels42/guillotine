@@ -29,7 +29,7 @@ export class BoardComponent implements OnInit, OnChanges {
     if (changes.newGame) {
       this.guessedLetters = [];
       this.wrongGuesses = 0;
-      this.guessedWord = this.word.map(() => ' ');
+      this.guessedWord = this.word.map((letter: string) => letter === '\'' || letter === '-' ? letter : ' ');
 
       this.newGame = false;
     }
@@ -47,18 +47,47 @@ export class BoardComponent implements OnInit, OnChanges {
     
     this.guessedLetters.push(letter);
     
-    if (this.word.includes(letter)) {
-      this.word.forEach((l: string, i: number) => {
-        if (l === letter) {
-          this.guessedWord[i] = letter;
-        };
-      });
-    } else {
-      this.wrongGuesses++;
-      this.remainingGuesses--;
-      this.wrongGuess.emit();
-    }
+    let letterArr: string[] = [];
 
+    switch(letter) {
+      case 'C':
+        letterArr = ['C','Ç'];
+        break;
+      case 'A':
+        letterArr = ['A','À','Á','Â','Ã','Ä','Å'];
+        break;
+      case 'E':
+        letterArr = ['E','È','É','Ê','Ë'];
+        break;
+      case 'I':
+        letterArr = ['I','Ì','Í','Î','Ï'];
+        break;
+      case 'O':
+        letterArr = ['O','Ò','Ó','Ô','Õ','Ö'];
+        break;
+      case 'U':
+        letterArr = ['U','Ù','Ú','Û','Ü'];
+        break;
+      default:
+        letterArr = [letter];
+    }
+    
+    let goodGuess = false;
+
+    this.word.forEach((l: string, i: number) => {
+      if (letterArr.includes(l)) {
+        this.guessedWord[i] = l;
+        goodGuess = true;
+      };
+
+      if (i + 1 === this.word.length && !goodGuess) {
+        this.wrongGuesses++;
+        this.remainingGuesses--;
+        this.wrongGuess.emit();
+        return;
+      }
+    });
+  
     let correct = true;
 
     this.word.forEach((l: string, i: number) => {
@@ -70,4 +99,8 @@ export class BoardComponent implements OnInit, OnChanges {
       }
     })
   }
+
+  // checkLetter(letter: string): boolean {
+  //   switch
+  // }
 }
