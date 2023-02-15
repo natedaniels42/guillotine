@@ -30,8 +30,8 @@ export class GameComponent implements OnInit {
 
   ngOnInit(): void {
     const chooseDialog = this.dialog.open(ChooseDialogComponent, {
-      width: '70vw',
-      height: '50vh'
+      width: window.innerWidth > 700 ? '70vw' : '90vw',
+      height: window.innerWidth > 700 ? '50vh' : '90vh'
     });
 
     chooseDialog.afterClosed().subscribe((result: any) => {
@@ -68,8 +68,8 @@ export class GameComponent implements OnInit {
       setTimeout(() => {
         // this.lose = true;
         const loseDialog = this.dialog.open(LoseDialogComponent, {
-          width: '70vw',
-          height: '50vh',
+          width: window.innerWidth > 700 ? '70vw' : '90vw',
+          height: window.innerWidth > 700 ? '50vh' : '90vh',
           data: {
             word: this.word.join('')
           }
@@ -77,8 +77,8 @@ export class GameComponent implements OnInit {
 
         loseDialog.afterClosed().subscribe(() => {
           const chooseDialog = this.dialog.open(ChooseDialogComponent, {
-            width: '70vw',
-            height: '50vh'
+            width: window.innerWidth > 700 ? '70vw' : '90vw',
+            height: window.innerWidth > 700 ? '50vh' : '90vh'
           });
 
           chooseDialog.afterClosed().subscribe((result: any) => {
@@ -104,14 +104,14 @@ export class GameComponent implements OnInit {
     this.playAudio('assets/audio/boo.mp3');
 
     const correctDialog = this.dialog.open(CorrectDialogComponent, {
-      width: '70vw',
-      height: '50vh'
+      width: window.innerWidth > 700 ? '70vw' : '90vw',
+      height: window.innerWidth > 700 ? '50vh' : '90vh'
     });
 
     correctDialog.afterClosed().subscribe(() => {
       const chooseDialog = this.dialog.open(ChooseDialogComponent, {
-        width: '70vw',
-        height: '50vh'
+        width: window.innerWidth > 700 ? '70vw' : '90vw',
+        height: window.innerWidth > 700 ? '50vh' : '90vh'
       });
 
       chooseDialog.afterClosed().subscribe((result: any) => {      
@@ -134,7 +134,7 @@ export class GameComponent implements OnInit {
   playAgain() {
     this.newWord.setValue('');
     this.word = [];
-    this.remainingGuesses = 10;
+    this.remainingGuesses = 7;
     this.newGame = this.newGame ? false : true;
   }
 
