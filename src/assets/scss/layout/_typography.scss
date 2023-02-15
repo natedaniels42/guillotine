@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+  background-color: $white;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+.body-content {
+  height: 100%;
+  background-size: 50% auto;
+  font-family: $font-family;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 400;
+  // font-size: 1.2rem;
+  // line-height: 1.25rem;
+  padding-top: 0.22px;
+  color: #000;
+  border: currentColor;
+  border-image: none;
+  box-shadow: none;
+  background-color: $white;
+  /*-webkit-box-sizing: initial;
+  box-sizing: initial;*/
+}
+
+.header-table-section {
+  float: left;
+  float: right;
+  /* margin: 2em; */
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  /* On small screens, the nav menu spans the full width of the screen. Leave a space for it.#0072c6 */
+  /*.body-content {
+    padding-top: 30px;
+  }*/
+  .header-profile-section {
+    display: none;
+  }
+  .mat-dialog-content {
+    overflow: scroll;
+  }
+}
+
+p {
+  margin: 1px 1px 1px 1px;
+}
+
+.page-loader {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1052;
+  text-align: center;
+  display: flex;
+  -ms-flex-pack: center !important;
+  justify-content: center !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+}

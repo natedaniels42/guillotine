@@ -1,0 +1,371 @@
+.black {
+    fill: black;
+}
+
+.silver {
+    fill: silver;
+}
+
+.gray {
+    fill: gray;
+}
+
+.maroon {
+    fill: maroon;
+}
+
+.red {
+    fill: red;
+}
+
+.purple {
+    fill: purple;
+}
+
+.fuchsia {
+    fill: fuchsia;
+}
+
+.green {
+    fill: green;
+}
+
+.lime {
+    fill: lime;
+}
+
+.olive {
+    fill: olive;
+}
+
+.yellow {
+    fill: yellow;
+}
+
+.navy {
+    fill: navy;
+}
+
+.blue {
+    fill: blue;
+}
+
+.teal {
+    fill: teal;
+}
+
+.aqua {
+    fill: aqua;
+}
+
+.cheer1 {
+    animation: cheer1 10s;
+}
+
+.cheer2 {
+    animation: cheer2 10s;
+}
+
+.cheer3 {
+    animation: cheer3 10s;
+}
+
+@keyframes cheer1 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    52% {
+        transform: translateY(20px);
+    }
+    54% {
+        transform: translateY(0);
+    }
+    56% {
+        transform: translateY(20px);
+    }
+    58% {
+        transform: translateY(0);
+    }
+    60% {
+        transform: translateY(20px);
+    }
+    62% {
+        transform: translateY(0);
+    }
+    64% {
+        transform: translateY(20px);
+    }
+    66% {
+        transform: translateY(0);
+    }
+    68% {
+        transform: translateY(20px);
+    }
+    70% {
+        transform: translateY(0);
+    }
+    72% {
+        transform: translateY(0);
+    }
+    74% {
+        transform: translateY(20px);
+    }
+    76% {
+        transform: translateY(0);
+    }
+    78% {
+        transform: translateY(20px);
+    }
+    80% {
+        transform: translateY(0);
+    }
+    82% {
+        transform: translateY(20px);
+    }
+    84% {
+        transform: translateY(0);
+    }
+    86% {
+        transform: translateY(20px);
+    }
+    88% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(20px);
+    }
+    92% {
+        transform: translateY(0);
+    }
+    94% {
+        transform: translateY(20px);
+    }
+    96% {
+        transform: translateY(0);
+    }
+    98% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes cheer2 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    53% {
+        transform: translateY(0);
+    }
+    56% {
+        transform: translateY(20px);
+    }
+    59% {
+        transform: translateY(0);
+    }
+    62% {
+        transform: translateY(20px);
+    }
+    65% {
+        transform: translateY(0);
+    }
+    68% {
+        transform: translateY(20px);
+    }
+    71% {
+        transform: translateY(0);
+    }
+    74% {
+        transform: translateY(20px);
+    }
+    77% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    83% {
+        transform: translateY(0);
+    }
+    86% {
+        transform: translateY(20px);
+    }
+    89% {
+        transform: translateY(0);
+    }
+    92% {
+        transform: translateY(20px);
+    }
+    95% {
+        transform: translateY(0);
+    }
+    98% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    } 
+}
+
+@keyframes cheer3 {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(0);
+    }
+    51% {
+        transform: translateY(20px);
+    }
+    52% {
+        transform: translateY(0);
+    }
+    53% {
+        transform: translateY(20px);
+    }
+    54% {
+        transform: translateY(0);
+    }
+    55% {
+        transform: translateY(20px);
+    }
+    56% {
+        transform: translateY(0);
+    }
+    57% {
+        transform: translateY(20px);
+    }
+    58% {
+        transform: translateY(0);
+    }
+    59% {
+        transform: translateY(20px);
+    }
+    60% {
+        transform: translateY(0);
+    }
+    61% {
+        transform: translateY(0);
+    }
+    62% {
+        transform: translateY(20px);
+    }
+    63% {
+        transform: translateY(0);
+    }
+    64% {
+        transform: translateY(20px);
+    }
+    65% {
+        transform: translateY(0);
+    }
+    66% {
+        transform: translateY(20px);
+    }
+    67% {
+        transform: translateY(0);
+    }
+    68% {
+        transform: translateY(20px);
+    }
+    69% {
+        transform: translateY(0);
+    }
+    70% {
+        transform: translateY(20px);
+    }
+    71% {
+        transform: translateY(0);
+    }
+    72% {
+        transform: translateY(20px);
+    }
+    73% {
+        transform: translateY(0);
+    }
+    74% {
+        transform: translateY(20px);
+    }
+    75% {
+        transform: translateY(0);
+    }
+    76% {
+        transform: translateY(20px);
+    }
+    77% {
+        transform: translateY(0);
+    }
+    78% {
+        transform: translateY(20px);
+    }
+    79% {
+        transform: translateY(0);
+    }
+    80% {
+        transform: translateY(20px);
+    }
+    81% {
+        transform: translateY(0);
+    }
+    82% {
+        transform: translateY(20px);
+    }
+    83% {
+        transform: translateY(0);
+    }
+    74% {
+        transform: translateY(20px);
+    }
+    85% {
+        transform: translateY(0);
+    }
+    86% {
+        transform: translateY(20px);
+    }
+    87% {
+        transform: translateY(0);
+    }
+    88% {
+        transform: translateY(20px);
+    }
+    89% {
+        transform: translateY(0);
+    }
+    90% {
+        transform: translateY(20px);
+    }
+    91% {
+        transform: translateY(0);
+    }
+    92% {
+        transform: translateY(20px);
+    }
+    93% {
+        transform: translateY(0);
+    }
+    94% {
+        transform: translateY(20px);
+    }
+    95% {
+        transform: translateY(0);
+    }
+    96% {
+        transform: translateY(20px);
+    }
+    97% {
+        transform: translateY(0);
+    }
+    98% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

@@ -1,0 +1,31 @@
+<div>
+    <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+        width="193.000000pt" height="261.000000pt" viewBox="0 0 193.000000 261.000000"
+        preserveAspectRatio="xMidYMid meet">
+        <g transform="translate(0.000000,261.000000) scale(0.100000,-0.100000)"
+            fill="black" stroke="black">
+            <path id="frame" d="M518 1580 518 10 618 10 618 1580 1218 1580 1218 10 1318 10 1318 1580 1418 1580 1418 1680 418 1680 418 1580 518 1580"></path>
+            <path id="left-support" d="M518 310 218 10 268 10 518 260"></path>
+            <path id="right-support" d="M1318 310 1618 10 1568 10 1318 260"></path>
+            <path id="base" d="M118 10 1718 10 1718 -40 118 -40"></path>
+            <path id="blade" fill="silver" [ngClass]="step" d="M668 1530 1168 1530 1168 1480 1118 1480 718 1180 718 1480 668 1480 668 1530"></path>
+            <path id="rope" fill="silver" d="M908 1580 908 1530 928 1530 928 1580 908 1580"></path>
+            <path id="rope" fill="silver" d="M908 1530 908 1480 928 1480 928 1530 908 1530" *ngIf="lowerIndex < 10"></path>
+            <path id="rope" fill="silver" d="M908 1480 908 1380 928 1380 928 1480 908 1480" *ngIf="lowerIndex < 9"></path>
+            <path id="rope" fill="silver" d="M908 1380 908 1280 928 1280 928 1380 908 1380" *ngIf="lowerIndex < 8"></path>
+            <path id="rope" fill="silver" d="M908 1280 908 1180 928 1180 928 1280 908 1280" *ngIf="lowerIndex < 7"></path>
+            <path id="rope" fill="silver" d="M908 1180 908 1080 928 1080 928 1180 908 1180" *ngIf="lowerIndex < 6"></path>
+            <path id="rope" fill="silver" d="M908 1080 908 980 928 980 928 1080 908 1080" *ngIf="lowerIndex < 5"></path>
+            <path id="rope" fill="silver" d="M908 980 908 880 928 880 928 980 908 980" *ngIf="lowerIndex < 4"></path>
+            <path id="rope" fill="silver" d="M908 880 908 780 928 780 928 880 908 880" *ngIf="lowerIndex < 3"></path>
+            <path id="rope" fill="silver" d="M908 780 908 680 928 680 928 780 908 780" *ngIf="lowerIndex < 2"></path>
+            <path id="rope" fill="silver" d="M908 680 908 580 928 580 928 680 908 680" *ngIf="lowerIndex < 1"></path>
+            <path id="restraint-bottom" d="M638 330 1198 330 1198 480 998 480 C 998 480 923 330 838 480 L 838 480 638 480 638 330"></path>
+            <path id="restraint-top" d="M638 500 638 650 1198 650 1198 500 998 500 C 998 500 923 650 838 500 L 838 500 638 500"></path>
+            <circle id="head" [ngClass]="remainingGuesses > 0 ? '' : 'slice'" fill="green" cx="918" cy="490" r="80"></circle>
+            <path id="body" fill="green" d="M948 330 908 330 908 280 808 300 768 330 748 330 788 300 908 260 908 110 828 0 848 0 928 110 1008 0 1028 0 948 110 948 260 1068 300 1108 330 1088 330 1048 300 948 280 948 330"></path>
+            <circle id="left-hand" fill="green" cx="708" cy="490" r="30"></circle>
+            <circle id="left-hand" fill="green" cx="1128" cy="490" r="30"></circle>
+        </g>
+    </svg>
+</div>

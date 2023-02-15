@@ -1,0 +1,38 @@
+//1. Settings
+@import "./settings/variables_cust";
+@import "settings/mixins";
+
+//2. Vendors
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/scss/bootstrap";
+@import "~primeng/resources/themes/saga-blue/theme.css";
+@import "~primeng/resources/primeng.min.css";
+@import "~primeflex/primeflex.css";
+@import "~primeicons/primeicons.css";
+@import "~quill/dist/quill.core.css";
+@import "~quill/dist/quill.snow.css";
+
+//3. layout
+@import "layout/typography";
+@import "layout/theme";
+
+//4. Components
+@import "components/p-table";
+@import "components/a-table";
+@import "components/a-button";
+@import "components/a-checkbox";
+@import "components/a-dialog";
+@import "components/a-radio";
+@import "components/a-select";
+@import "components/a-snackbar";
+@import "components/a-tab";
+@import "components/a-card";
+@import "components/a-togglebtn";
+@import "components/a-expansion-panel";
+@import "components/p-dialog";
+@import "components/p-radio";
+@import "components/p-fileupload";
+@import "components/p-button";
+@import "components/p-accordian";
+@import "layout/app-design"; // keep this file as last in this import

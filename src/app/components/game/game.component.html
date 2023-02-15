@@ -1,0 +1,12 @@
+<h1 id="title">Guillotine!!!!!</h1>
+<div class="mat-container" #content>
+    <div style="display: flex; justify-content: center;">
+        <app-crowd [remainingGuesses]="remainingGuesses" [newGame]="newGame"></app-crowd>
+        <app-guillotine [wrongGuesses]="wrongGuesses" [remainingGuesses]="remainingGuesses" [newGame]="newGame" (guess)="guess($event)" (guessTotal)="guessTotal($event)"></app-guillotine>
+    </div>
+    <br>
+    <div style="display: flex; justify-content: center;" *ngIf="word">
+        <app-board [remainingGuesses]="remainingGuesses" [newGame]="newGame" (wrongGuess)="wrongGuess()" (correctGuess)="correctGuess()" [word]="word"></app-board>
+    </div>
+</div>
+

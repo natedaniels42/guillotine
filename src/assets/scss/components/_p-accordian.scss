@@ -1,0 +1,21 @@
+.p-accordion .p-accordion-header .p-accordion-header-link {
+  padding: 0.2rem;
+  border: 1px solid #dee2e6;
+  color: $primary;
+  background: #f8f9fa;
+  font-weight: 600;
+  border-radius: 3px;
+  transition: box-shadow 0.2s;
+}
+
+.p-accordion
+  .p-accordion-header:not(.p-disabled)
+  .p-accordion-header-link:focus {
+  outline: 0 none;
+  outline-offset: 0;
+  box-shadow: 0 0 0 0.1rem $primary;
+}
+
+.p-accordion .p-accordion-content {
+  padding: 0.4rem;
+}

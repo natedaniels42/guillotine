@@ -1,0 +1,12 @@
+@use '@angular/material' as mat;
+@mixin font-source-sans {
+  font-family: '"Helvetica Neue", arial';
+}
+
+@import "@angular/material/theming";
+$custom-typography: mat.define-typography-config(
+  $font-family: '"Helvetica Neue", arial'
+
+);
+
+@include mat.all-component-typographies($custom-typography);

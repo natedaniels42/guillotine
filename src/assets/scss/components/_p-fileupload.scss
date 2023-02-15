@@ -1,0 +1,49 @@
+.p-fileupload .p-fileupload-buttonbar {
+  padding: 0.2rem;
+}
+.p-fileupload .p-fileupload-content {
+  padding: 0.1rem ;
+}
+.p-fileupload .p-fileupload-row > div {
+  padding: 0.5rem 0.5rem;
+}
+
+.p-fileupload-choose:not(.p-disabled):hover {
+  background: $primary;
+  color: $white;
+  border-color: $primary;
+  margin-bottom: 2px;
+}
+
+
+.p-fileupload-choose:not(.p-disabled):active {
+  background: $primary;
+  color: $white;
+  border-color: $primary;
+}
+
+.p-fileupload .p-fileupload-buttonbar .p-button {
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 767px) {
+  .p-fileupload .p-fileupload-buttonbar .p-button {
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  .ui-fileupload-files td{
+        display: inline-block;
+  }
+
+  .ui-fileupload-buttonbar .ui-button{
+       padding: 19px 30px 19px 30px !important
+  }
+
+  .ui-fileupload-buttonbar .ui-button .ui-button-text {
+       display: none;
+  }
+
+ .ui-fileupload-buttonbar .ui-button .ui-icon{
+      margin-left: 15px !important;
+  }
+}

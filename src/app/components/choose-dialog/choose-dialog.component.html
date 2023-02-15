@@ -1,0 +1,30 @@
+<h1 style="text-align: center;">What would you like to do?</h1>
+<br><br>
+<div style="display: flex; justify-content: center; flex-direction: column;">
+    <form [formGroup]="wordForm">
+        <div class="form-row" *ngIf="typeWord === true">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <mat-form-field appearance="legacy">
+                    <mat-label>New Word</mat-label>
+                    <input 
+                    type="password"
+                    matInput
+                    formControlName="newWord"
+                    (ngModelChange)="makeUpper()">
+                </mat-form-field>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="form-row">
+            <div class="col-sm-4"></div>
+            <mat-dialog-actions>
+                <button mat-button [mat-dialog-close]="'random'" align="center" *ngIf="!typeWord">Choose Random Word</button>
+                <button mat-button (click)="setTypeWord(true)" align="center" *ngIf="!typeWord">Type Word</button>
+                <button mat-button [mat-dialog-close]="newWord.value" align="center" *ngIf="typeWord">Enter</button>  
+                <button mat-button align="center" (click)="setTypeWord(false)" *ngIf="typeWord">Cancel</button>  
+            </mat-dialog-actions>
+            <div class="col-sm-4"></div>
+        </div>
+    </form>
+</div>

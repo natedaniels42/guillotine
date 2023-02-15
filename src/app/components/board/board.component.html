@@ -1,0 +1,14 @@
+<div class="board">
+    <div class="score">
+        <p style="margin-left: 20px" *ngIf="remainingGuesses">Remaining Guesses: {{remainingGuesses}}</p>
+    </div>
+    <div class="letter-box">
+        <div *ngFor="let letter of letters" [ngClass]="guessedLetters.includes(letter) ? 'letter-tile chosen' : 'letter-tile'" (click)="guessLetter(letter)">{{letter}}</div>
+    </div>
+    <br>
+    <div class="word-box" *ngIf="guessedWord.length > 0" style="display: flex; flex-wrap: wrap; margin-left: 20px;">
+        <div *ngFor="let letter of guessedWord; index as i;">
+            <p [ngClass]="word[i] !== ' ' ? 'word-letter underline' : 'word-letter'">{{letter}}</p>
+        </div>
+    </div>
+</div>

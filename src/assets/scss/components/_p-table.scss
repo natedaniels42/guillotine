@@ -1,0 +1,374 @@
+// This file contains primeNG Grid style.
+.p-button.p-button-outlined {
+  background-color: transparent;
+  color: $primary;
+  border: 1px solid;
+  margin: 5px;
+}
+
+.p-button.p-button-outlined:enabled:active {
+  color: $primary;
+}
+
+.p-checkbox .p-checkbox-box.p-highlight {
+  border-color: $white;
+  background: $primary;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box:hover {
+  border-color: $primary;
+}
+
+.p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover {
+  border-color: $white;
+  background: $primary;
+  color: $white;
+}
+
+.filter-row {
+  max-height: 10% !important;
+  font-size: 12px;
+}
+
+.p-datatable {
+  font-family: $font-family;
+
+  .p-datatable-thead {
+    tr {
+      th {
+        background: $primary;
+        color: $white;
+        padding: 0.1rem 0.5rem;
+        font-size: $grid-header-font-size;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .p-sortable-column {
+    &.p-highlight {
+      background: $primary;
+      color: $white;
+
+      &:hover {
+        background: $primary;
+        color: $white;
+      }
+    }
+
+    &:not(.p-highlight) {
+      &:hover {
+        background: $primary;
+        color: $white;
+      }
+    }
+  }
+
+  .p-datatable-tbody {
+    tr {
+      td {
+        padding: 0.1rem 0.5rem;
+        // border: 0px;
+        font-size: $grid-content-font-size;
+        font-weight: 400;
+        text-align: left;
+
+        word-break: break-word;
+
+        .text-to-link-line {
+          min-width: 65px;
+
+          .non-clickable {
+            pointer-events: none;
+          }
+        }
+
+        .p-splitbutton-menubutton {
+          border-radius: 8px;
+        }
+        a {
+          text-decoration: underline;
+
+          i {
+            vertical-align: middle;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        background-color: $alter-net-table-row;
+      }
+    }
+  }
+}
+
+.p-paginator {
+  border: 0px;
+  font-family: $font-family;
+
+  .p-dropdown {
+    border: 0px;
+
+    .p-dropdown-trigger {
+      width: auto;
+    }
+
+    .p-dropdown-label {
+      font-size: 0.875rem;
+      padding-right: 10px;
+    }
+
+    &:focus {
+      border: 0px;
+      outline: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      border: 0px;
+    }
+
+    &:not(.p-disabled) {
+      &.p-focus {
+        border: 0px;
+        outline: none;
+        box-shadow: none;
+      }
+    }
+  }
+
+  .p-paginator-pages {
+    .p-paginator-page {
+      min-width: 2.0625rem;
+      height: 2.0625rem;
+      margin: 0;
+      font-size: 0.875rem;
+      font-weight: 400;
+
+      &.p-highlight {
+        background: $secondary;
+        border-color: $secondary;
+        color: $white;
+      }
+
+      &:not(.p-highlight) {
+        &:hover {
+          background: $secondary;
+          border-color: $secondary;
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+.p-dropdown-panel {
+  .p-dropdown-items {
+    .p-dropdown-item {
+      &.p-highlight {
+        background: $secondary;
+        color: $white;
+      }
+
+      &:not(.p-highlight) {
+        &:not(.p-disabled) {
+          &:hover {
+            background: $secondary !important;
+            color: $white !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.p-datatable-thead {
+  .pi {
+    color: $white !important;
+  }
+
+  .p-column-filter-menu-button {
+    &:hover {
+      .pi {
+        color: $primary !important;
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+}
+
+.elip {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+p-sorticon {
+  vertical-align: text-bottom;
+}
+
+.p-column-filter-overlay-menu {
+  z-index: 10 !important;
+}
+
+.p-datatable .p-datatable-header {
+  padding: 0.2rem;
+}
+
+.p-datatable .p-datatable-header {
+  font-weight: 400;
+}
+
+.p-button-delete {
+  padding: 0.2rem 0.2rem !important;
+}
+
+.p-datatable-responsive-table .p-datatable-tbody>tr>td .p-column-title {
+  display: none;
+}
+
+.p-datatable.p-datatable-gridlines .p-datatable-tbody>tr>td {
+  border: 1px solid $grid-border-color;
+}
+
+.p-datatable.p-datatable-gridlines .p-datatable-thead>tr>th {
+  border: 1px solid $white;
+}
+
+.p-datatable.p-datatable-gridlines.p-datatable-border-trim {
+  .p-datatable-tbody>tr {
+    td {
+      border-top: 0px;
+      border-left: 0px;
+    }
+
+    td:first-child {
+      border-left: 1px solid $grid-border-color;
+    }
+
+    td:last-child {
+      border-right: 1px solid $grid-border-color;
+    }
+  }
+
+  .p-datatable-thead>tr {
+    th {
+      border-top: 0px;
+      border-left: 0px;
+    }
+
+    th:first-child {
+      border-left: 1px solid $white;
+    }
+
+    th:last-child {
+      border-right: 1px solid $white;
+    }
+  }
+}
+
+.empty-message-style {
+  text-align: center;
+  font-size: $grid-content-font-size;
+  width: 100%;
+}
+
+.grid-message-style {
+  text-align: center;
+  font-size: $grid-header-font-size;
+  width: 100%;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-icon {
+  margin-left: 4px !important;
+  font-size: 10px;
+}
+
+.p-datatable-header-filter {
+  .p-datatable-thead {
+    tr:not(:first-child) {
+      th {
+        padding-bottom: 0.25rem;
+        padding-top: 0.25rem;
+      }
+    }
+  }
+
+  .p-inputtext {
+    padding-bottom: 0.25rem;
+    padding-top: 0.25rem;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .p-datatable {
+    &.p-datatable-responsive-table {
+
+      .p-datatable-thead>tr>th,
+      .p-datatable-tfoot>tr>td {
+        display: none !important;
+      }
+
+      .p-datatable-tbody>tr>td {
+        // text-align: left;
+        // display: inline-flex;
+        // width: 100%;
+        // float: left;
+        // clear: left;
+        // border: 0 none;
+        display: flex;
+        width: 100% !important;
+        min-width: 100% !important;
+        align-items: center;
+        justify-content: start !important;
+
+
+        .p-column-title {
+          padding: 0.4rem;
+          min-width: 120px !important;
+          display: inline-block;
+          margin: -0.4em 1em -0.4em -0.4rem;
+          font-weight: bold;
+          width: 120px;
+          white-space: normal;
+        }
+
+        &:last-child {
+          border-bottom: 1px solid $grid-border-color;
+        }
+      }
+
+      &.p-datatable-scrollable {
+
+        .p-datatable-tbody>tr,
+        .p-datatable-tfoot>tr,
+        .p-datatable-thead>tr {
+          flex-wrap: wrap;
+        }
+      }
+    }
+
+    &.p-datatable-gridlines {
+      .p-datatable-tbody>tr>td {
+        border: 0px;
+      }
+
+      .p-datatable-thead>tr>th {
+        border: 0px;
+      }
+
+      &.p-datatable-border-trim {
+        .p-datatable-tbody>tr>td:first-child {
+          border-left: 0px;
+        }
+
+        .p-datatable-tbody>tr>td:last-child {
+          border-right: 0px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+p-button {
+    margin: 0 5px;
+}
+
+.dialogWarn-fix {
+    z-index: 9999 !important;
+}
+
+.ui-dialog-titlebar-close {
+    display:none;
+}
+
+#title {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Julee', cursive;
+}

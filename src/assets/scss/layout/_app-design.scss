@@ -1,0 +1,209 @@
+// add project relates common styles here
+.clickable {
+  cursor: pointer;
+}
+.text-to-link {
+  color: $link-color;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.text-to-link-line {
+  color: $link-color;
+  text-decoration: underline;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.header-value-field-margin {
+  margin-bottom: -14px;
+}
+
+.card-body-simple-style {
+  border: black 1px solid;
+}
+
+.toast-triangle {
+  font-size: 3rem;
+  margin-left: 45%;
+  color: #e9a700;
+}
+
+.p-datatable .p-sortable-column .p-sortable-column-badge {
+  display: none !important;
+}
+
+.p-datatable .p-sortable-column:focus {
+  box-shadow: inset 0 0 0 0.15rem $primary;
+  outline: 0 none;
+}
+
+.p-input-icon-left,
+.p-input-icon-right {
+  position: relative !important;
+  display: inline-block !important;
+  // margin-left: 80px !important;
+
+  .pi-times {
+    cursor: pointer;
+    z-index: 100;
+  }
+}
+
+.p-editor-container .ql-snow.ql-toolbar button.ql-active .ql-stroke,
+.p-editor-container .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke,
+.p-editor-container .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke {
+  stroke: #000;
+}
+
+
+.p-editor-container .ql-snow.ql-toolbar button.ql-active,
+.p-editor-container .ql-snow.ql-toolbar .ql-picker-label.ql-active,
+.p-editor-container .ql-snow.ql-toolbar .ql-picker-item.ql-selected {
+  background: #F99A36 !important;
+}
+
+.disable_ripple:hover {
+  background-color: $primary !important;
+}
+
+.mat-progress-spinner circle,
+.mat-spinner circle {
+  stroke: $primary;
+}
+
+
+.actions-split-btn {
+  .p-splitbutton-defaultbutton {
+    display: none;
+  }
+}
+
+ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
+  white-space: nowrap;
+}
+
+.ellipsis-tooltip {
+  .p-tooltip-text {
+    font-size: 12px;
+  }
+}
+
+.full-width-card-header {
+  .mat-card-header-text {
+    width: 100%;
+  }
+}
+
+@media (max-width: 767px) {
+  .p-tabview .p-tabview-nav li .p-tabview-nav-link {
+    width: max-content !important;
+  }
+}
+
+.app-tab-view {
+  .p-tabview-nav-link {
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+}
+
+@media print {
+  #scrollableDiv {
+    width: 100%;
+    height: 100%;
+  }
+
+  .visible-print {
+    display: block !important;
+    position: relative !important;
+    width: auto !important;
+    height: auto !important;
+    overflow: visible !important;
+    margin-left: 0 !important;
+  }
+
+  p-table {
+    th {
+      min-width: auto !important;
+
+      .p-sorticon,
+      p-columnfilter {
+        display: none !important;
+      }
+    }
+  }
+
+  .p-tabview-nav-container {
+    display: none !important;
+  }
+
+  table {
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+  td, th {
+    width: auto !important;
+
+    .ellipsis, .elip {
+      white-space: normal !important;
+    }
+  }
+
+  .isprint-all {
+    .p-tabview-panel {
+      display: block !important;
+    }
+  }
+
+  .is-modal-printing {
+    width: inherit !important;
+    height: inherit !important;
+    max-height: inherit !important;
+    max-width: inherit !important;
+  }
+}
+
+.is-printing {
+  table {
+    table-layout: fixed !important;
+    width: 100% !important;
+  }
+  td, th {
+    width: auto !important;
+  }
+}
+
+.hide-common-control {
+  &.add-button .add-button ,
+  &.add-button .required-fields {
+    display: none;
+  }
+}
+
+.p-toast {
+  z-index: 999;
+}
+
+.calender-with-close {
+  .datepicker-section {
+    width: calc(100% - 28px);
+  }
+
+  .clear-btn {
+    flex-shrink: 0;
+    width: 23px;
+    height: 23px;
+  }
+}
+
+.file-upload
+{
+  .p-message .p-message-wrapper {
+    padding: 0.25rem 0.5rem;
+  }
+}

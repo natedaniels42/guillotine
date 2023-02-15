@@ -1,0 +1,30 @@
+.success-snackbar {
+  background: $success-snackbar;
+  color: $white;
+}
+.error-snackbar {
+  background: $error-snackbar;
+  color: $white;
+}
+
+.pagevalidation-snackbar {
+  background: $page-validation-snackbar;
+  color: $white;
+}
+
+.warning-snackbar {
+  background: $warning-snackbar;
+  color: $white;
+}
+.info-snackbar {
+  background: $info-snackbar;
+  color: $white;
+}
+.mat-simple-snackbar-action {
+  color: $white;
+  background-color: $primary;
+  border-color: $white;
+  border-radius: 5px;
+  box-shadow: none;
+  border: 1px solid $primary;
+}

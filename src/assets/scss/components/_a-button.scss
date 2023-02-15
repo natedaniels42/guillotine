@@ -1,0 +1,75 @@
+.btn-primary {
+  color: $white;
+  background-color: $primary;
+  border-color: $primary;
+}
+
+.mat-raised-button {
+  // line-height: 27px !important;
+  font-size: 16px;
+}
+
+.mat-flat-button.mat-primary,
+.mat-raised-button.mat-primary,
+.mat-fab.mat-primary,
+.mat-mini-fab.mat-primary {
+  background-color: $primary;
+}
+.mat-raised-button:not([class*="mat-elevation-z"]) {
+  box-shadow: none;
+  border: 1px solid $primary;
+}
+
+.multiple-raise-button {
+  .mat-raised-button {
+    margin-right: 0.5rem;
+  }
+  .p-button {
+    margin-right: 0.5rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .multiple-raise-button {
+    .mat-raised-button {
+      margin-right: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    .p-button {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.btn-default {
+  color: #333;
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+}
+
+.mat-icon-button.mat-primary {
+  background-color: $white;
+}
+
+.mat-flat-button.mat-primary.mat-button-disabled,
+.mat-flat-button.mat-accent.mat-button-disabled,
+.mat-flat-button.mat-warn.mat-button-disabled,
+.mat-flat-button.mat-button-disabled.mat-button-disabled,
+.mat-raised-button.mat-primary.mat-button-disabled,
+.mat-raised-button.mat-accent.mat-button-disabled,
+.mat-raised-button.mat-warn.mat-button-disabled,
+.mat-raised-button.mat-button-disabled.mat-button-disabled,
+.mat-fab.mat-primary.mat-button-disabled,
+.mat-fab.mat-accent.mat-button-disabled,
+.mat-fab.mat-warn.mat-button-disabled,
+.mat-fab.mat-button-disabled.mat-button-disabled,
+.mat-mini-fab.mat-primary.mat-button-disabled,
+.mat-mini-fab.mat-accent.mat-button-disabled,
+.mat-mini-fab.mat-warn.mat-button-disabled,
+.mat-mini-fab.mat-button-disabled.mat-button-disabled {
+  background-color: $primary;
+  border-color: $primary;
+  color: $white;
+  opacity: 0.6;
+}

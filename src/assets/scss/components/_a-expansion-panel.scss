@@ -1,0 +1,31 @@
+mat-expansion-panel-header,  mat-expansion-panel-header:hover {
+  background-color: $primary !important;
+  opacity: 0.8 !important;
+}
+
+
+mat-panel-title {
+  color: white !important;
+}
+
+.mat-expansion-indicator::after {
+  color: $white;
+}
+
+.mat-expansion-panel-header {
+  height: 37px;
+  padding: 0px 24px 0px 5px !important;
+  font-size: $section-heading-font-size;
+  font-weight: 400;
+}
+.mat-expansion-panel-header.mat-expanded {
+  height: 37px;
+}
+
+.mat-expansion-panel-content{
+  font: 400 $grid-content-font-size $font-family;
+}
+
+.mat-expansion-panel-body {
+  padding: 0 10px 5px !important;
+}

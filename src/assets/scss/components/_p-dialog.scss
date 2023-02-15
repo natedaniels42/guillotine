@@ -1,0 +1,58 @@
+// .p-dialog .p-dialog-header .p-dialog-title {
+//   font-size: 18px;
+//   font-family: $font-family;
+//   font-weight: 500;
+//   margin-left: 1.5rem;
+// }
+
+// .p-dialog .p-dialog-header {
+//   padding: 0.2rem 0.2rem 0rem 0.2rem !important;
+
+// }
+
+.p-dialog .p-dialog-header {
+  //border-bottom: 2px solid $primary;
+  background-color: $primary;
+  font-family: $font-family;
+  color: $white;
+  margin: 0rem 0rem 10px 0rem !important;
+  padding: 0.2rem 0rem 0.2rem 0rem !important;
+  // border-top-right-radius: 0px;
+}
+.p-dialog {
+  background: $white;
+}
+.p-dialog .p-dialog-header .p-dialog-title {
+  font-size: 18px !important;
+  font-weight: 900;
+  padding-left: 2rem;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon {
+  height: 1rem;
+  width: 1rem;
+  color: $white;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icons {
+  margin-right: 0.3rem;
+
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icons span {
+  color: $white;
+}
+
+.proper-dialog {
+  .p-component-overlay {
+    z-index: 9 !important;
+  }
+}
+
+.p-calendar .p-datepicker-touch-ui, .p-datepicker-touch-ui {
+  min-width: 19vw !important;
+}
+
+.p-dialog .p-dialog-header .p-dialog-header-icon:enabled:hover{
+  background: none;
+}

@@ -1,0 +1,58 @@
+.mat-card {
+  width: 100%;
+  box-shadow: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
+  padding: 0px !important;
+  border-radius: 4px;
+  font-size: 11px !important;
+}
+
+.mat-card-header {
+  border-bottom: 2px solid $primary;
+  margin-bottom: 10px;
+}
+.mat-card-header .mat-card-title {
+  margin-bottom: 0px !important;
+  font-size: 18px !important;
+}
+
+:not([class*="mat-elevation-z"]).mat-card {
+  box-shadow: none;
+}
+
+.mat-card.mat-card-box {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  position: relative;
+  padding: 5px 10px !important;
+  border-radius: 4px;
+  box-shadow: 0 2px 1px -1px rgb(0 0 0 / 20%), 0 1px 1px 0 rgb(0 0 0 / 14%), 0 1px 3px 0 rgb(0 0 0 / 12%);
+  margin-bottom: $spacer !important;
+}
+
+.mat-card.mat-card-box:last-child {
+  margin-bottom: $spacer*0.5 !important;
+}
+
+.mat-card.mat-card-box .mat-card-header {
+  // border-bottom: none;
+  margin-bottom: 10px;
+  // background: #ccc;
+}
+
+.mat-card.mat-card-box .mat-card-header .mat-card-title {
+  margin-bottom: 0px !important;
+  font-size: 16px !important;
+  font-weight: 500;
+  // margin-left: 5px !important;
+}
+
+.mat-card.mat-card-box .mat-card-header .mat-card-header-text {
+  margin-left: 0px !important;
+}
+
+.mat-card-header-text {
+  margin: 0 0 0 5px!important;
+}
